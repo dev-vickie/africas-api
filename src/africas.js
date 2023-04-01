@@ -42,4 +42,3 @@ router.post('/send/:message/:phone/:hospital', async(req, res) => {
 });
 
 module.exports = router;
-
