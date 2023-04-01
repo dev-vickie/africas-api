@@ -16,11 +16,11 @@ const sms = Africastalking.SMS;
 
 const router = Router();
 
-router.post('/send/:message/:phone', async(req, res) => {
+router.post('/send/:message/:phone/:hospital', async(req, res) => {
     try{
 
         const options = {
-            to: [req.params.phone],
+            to: [req.params.phone,req.params.hospital],
             message: req.params.message
         };
 
